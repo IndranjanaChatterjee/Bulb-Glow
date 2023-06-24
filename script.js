@@ -1,22 +1,32 @@
-const circle=document.querySelector(".circle");
-const middle=document.querySelector(".middle");
-const btn=document.getElementById("on");
-btn.addEventListener("click",()=>
-{
-    let text=btn.innerText;
+const circle = document.querySelector(".circle");
+const middle = document.querySelector(".middle");
+const btn = document.getElementById("on");
+
+btn.addEventListener("click", () => {
+    let text = btn.innerText;
+    let get = document.getElementById("txt");
     console.log(document.body.style.backgroundColor);
-    if(text=="Turn on")
-    {
-        circle.classList.add("glow");
-        middle.classList.add("mid");
-        btn.innerText="Turn off";
-        
+    if (text == "Turn on") {
+        /*circle.classList.add("glow");
+        middle.classList.add("mid");*/
+        if (get.value == "" || get.value == null) {
+            document.querySelector(".msg").style.display = "block";
+        }
+        else {
+            document.querySelector(".msg").style.display = "none";
+            circle.style.backgroundColor = `${get.value}`;
+            middle.style.backgroundColor = `${get.value}`;
+
+            circle.style.boxShadow = `1px 2px 50px 35px ${get.value}`;
+            btn.innerText = "Turn off";
+        }
+
     }
-    else
-    {
-        circle.classList.remove("glow");
-        middle.classList.remove("mid");
-        btn.innerText="Turn on";
+    else {
+        circle.style.backgroundColor = "burlywood";
+        middle.style.backgroundColor = "burlywood";
+        circle.style.boxShadow = "none";
+        btn.innerText = "Turn on";
 
     }
 })
