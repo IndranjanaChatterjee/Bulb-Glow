@@ -5,10 +5,9 @@ const btn = document.getElementById("on");
 btn.addEventListener("click", () => {
     let text = btn.innerText;
     let get = document.getElementById("txt");
-    console.log(document.body.style.backgroundColor);
+    
     if (text == "Turn on") {
-        /*circle.classList.add("glow");
-        middle.classList.add("mid");*/
+        
         if (get.value == "" || get.value == null) {
             document.querySelector(".msg").style.display = "block";
         }

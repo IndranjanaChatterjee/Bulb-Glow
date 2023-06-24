@@ -10,7 +10,7 @@ body{
     text-align: center;
     flex-direction: column;
     position: relative;
-    background-color: black;
+    background-color:rgb(20, 17, 17);
 }
 .container
 {
@@ -27,6 +27,7 @@ body{
     
     border-radius: 50%;
     z-index: 999;
+    transition: box-Shadow 1s ease-in-out;
     
 }
 .middle{
@@ -45,14 +46,8 @@ body{
     bottom:2rem;
     
 }
-.glow{
-    background-color:burlywood;
-    box-shadow: 1px 2px 50px 35px yellow;
-    
-}
-.mid{
-    background-color: yellow;
-}
+
+
 
 button{
     height:5rem;
