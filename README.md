@@ -9,3 +9,6 @@ Enter the name of the colour you want to be of the bulb and then click on **Turn
 1. [html](https://github.com/IndranjanaChatterjee/Bulb-Glow/blob/main/index.html)
 2. [css](https://github.com/IndranjanaChatterjee/Bulb-Glow/blob/main/style.css)
 3. [js](https://github.com/IndranjanaChatterjee/Bulb-Glow/blob/main/script.js)
+
+## Link to my Project
+-----> [Link](https://indranjanachatterjee.github.io/Bulb-Glow/)
